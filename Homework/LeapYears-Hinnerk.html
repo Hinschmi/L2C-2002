@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Lession2_Doc2</title>
+  </head>
+  <body>
+    <h2>Leap years</h2>
+
+
+    <h3>
+      <script>
+
+        let myNumber = prompt('please enter any number');
+        myNumber= parseInt(myNumber);
+
+        if ((myNumber % 4 == 0 && myNumber % 100 != 0) ||  myNumber % 400 == 0 ) {
+
+          document.write( myNumber + " is a leap-year <br>");
+        } else {
+          document.write( myNumber + " is not a leap-year <br>");
+        }
+        document.write("<br>Here are all leap-years from 1800 till 2400:<br><br>");
+        let a = 0;
+        for (let i=1800; i<=2400; i++) {
+
+          if((i % 4 == 0 && i % 100 != 0) ||  i % 400 == 0 ) {
+            a += 1;
+            if (a <= 12 && i<2400) {
+              document.write( i +" • ");
+            } else {
+              a = 0;
+              document.write( i +"<br>");
+
+            }
+
+          }
+
+        }
+
+
+
+      </script>
+  </h3>
+      <p>  </p>
+
+
+  </body>
+</html>
