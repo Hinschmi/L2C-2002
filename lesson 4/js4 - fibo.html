@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // // the old switcheroo
+        // let x = 10;
+        // let y = 15;
+        // let temp;
+
+        // temp = x;
+        // x = y;
+        // y = temp;
+
+        // let a = 0;
+        // let b = 1;
+        // let res;
+
+        // // document.write("1: " + a + "<br>");
+        // // document.write("2: " + b + "<br>");
+
+        // let fibo = [];
+        // fibo[0] = a;
+        // fibo[1] = b;
+
+        // document.write(fibo + "<br>");
+
+        // for (let i = 2; i < 20; i++) {
+        //     res = a + b;
+        //     // document.write((i + 1) + ": " + res + "<br>");
+
+        //     a = b;
+        //     b = res;
+
+        //     fibo[i] = res;
+        //     document.write(fibo + "<br>");
+        // }
+        
+
+        let fibo = [0, 1];
+        for (let i = 2; i < 20; i++) {
+            fibo[i] = fibo[i - 1] + fibo[i - 2];
+        }
+        document.write(fibo);
+        
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

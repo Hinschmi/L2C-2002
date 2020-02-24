@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        
+        // EXERCISE 3
+        let userAmount = 9; // prompt later
+        let exchangeRate = 0.92;
+
+        let finalAmount = userAmount * exchangeRate;
+
+        // document.write(finalAmount.toFixed(2) + "€");
+
+        finalAmount = Math.round(finalAmount * 100) / 100;
+        
+        document.write(finalAmount + "€<br>");
+
+
+        // let n = 4; // prompt later
+        // let total = 0;
+
+        // for (let i = 1; i <= n; i++) {
+        //     total += i;
+        //     if (i < n) {
+        //         document.write(i + " + ");
+        //     } else {
+        //         document.write(i + " = " + total);
+        //     }
+        // }
+
+        let n = 6;
+        let total = 0;
+
+        // for (let i = 1; i <= n; i++) {
+        //     if (i % 3 == 0 || i % 5 == 0) {
+        //         total += i;
+        //         if (i > 3) {
+        //             document.write(" + ");
+        //         }
+        //         document.write(i);
+        //     }
+        // }
+        // document.write(" = " + total);
+
+
+        for (let i = 1; i <= n; i++) {
+            if (i % 3 != 0 && i % 5 != 0) {
+                continue;
+            }
+
+            total += i;
+            if (i > 3) {
+                document.write(" + ");
+            }
+            document.write(i);
+        }
+        document.write(" = " + total);
+    </script>
+</body>
+</html>

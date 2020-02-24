@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let number = 17; // prompt later
+        // let multCount = 0;
+
+        // for (let i = 2; i < number; i++) {
+        //     // let division = number / i;
+        //     let remainder = number % i;
+
+        //     // document.write(number + " / " + i + " = " + division + "<br>");
+        //     document.write(number + " % " + i + " = " + remainder + "<br>");
+        //     // document.write("-----<br>");
+
+        //     if (remainder == 0) {
+        //         multCount++;
+        //     }
+            
+        // }
+
+        // if (multCount == 0) {
+        //     document.write("DUDE!!!!!! That's a Prime Bro...");
+        // } else {
+        //     document.write("No prime");
+        // }
+
+
+        let number = 23243872348972123; // prompt later
+        let isPrime = true;
+
+        for (let i = 2; i < number; i++) {
+            if (number % i == 0) {
+                isPrime = false;
+                break;
+            }
+        }
+
+        if (isPrime) {
+            document.write("DUDE!!!!!! That's a Prime Bro...");
+        } else {
+            document.write("No prime");
+        }
+
+
+        
+
+    </script>
+</body>
+</html>
