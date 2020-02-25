@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework</title>
+</head>
+<body>
+    <h3>
+
+        <script>
+            // ### Input and output
+            // Write a program that ask the user for his name and prints a greeting.
+            // Please enter your name:
+            // Hello <NAME>, welcome to the Learn to Code course.
+
+            let theName = prompt('What is your name?');
+            document.write('Hi ' + theName + ', how are you?<br><br>');
+
+            // ## Exercise 2
+            // ### Format text
+            // Choose a simple Ascii art from the website https://www.asciiart.eu/.
+            // Output it to the ___console___. And with document.write 
+            let myArtSplit = [];
+            let myArt = `           ____
+          /   /\\
+         /___/  \\
+        /   /\\  /\\
+       /   /  \\/  \\
+      /   /   /\\   \\
+     /   /   /  \\   \\
+    /   /   /\\   \\   \\
+   /   /   /  \\   \\   \\
+  /___/___/____\\   \\   \\
+ /   /          \\   \\  /\\
+/___/____________\\___\\/  \\
+\\   \\             \\   \\  /
+ \\___\\_____________\\___\\/`; 
+ 
+
+
+        console.log(myArt); 
+        document.write('<pre>' + myArt + '</pre>'); 
+       
+        // ## Exercise 3
+        // ### Currency converter
+        // Write a program that asks the user for an amount in USD.
+        // Output that amount converted to EURO.
+
+        let dollar = prompt( 'Hi ' + theName +', How many Dollar you want to change?');
+        //1 dollar = 0.92 €
+        let euro = (parseFloat(dollar) * 0.92).toFixed(2);
+        document.write('For ' + dollar + 'USD, you will get: ' + euro + 'Euro');
+        
+        
+
+
+
+        </script> 
+    </h3>
+
+</body>
+</html>

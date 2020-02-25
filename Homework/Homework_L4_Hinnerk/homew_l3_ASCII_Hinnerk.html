@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework</title>
+</head>
+<body>
+    <h3>
+
+        <script>
+      
+            // ## Exercise 2
+            // ### Format text
+            // Choose a simple Ascii art from the website https://www.asciiart.eu/.
+            // Output it to the ___console___. And with document.write 
+            let myArtSplit = [];
+            let asciiArt = '';
+            let myArt = `
+           ____
+          /   /\\
+         /___/  \\
+        /   /\\  /\\
+       /   /  \\/  \\
+      /   /   /\\   \\
+     /   /   /  \\   \\
+    /   /   /\\   \\   \\
+   /   /   /  \\   \\   \\
+  /___/___/____\\   \\   \\
+ /   /          \\   \\  /\\
+/___/____________\\___\\/  \\
+\\   \\             \\   \\  /
+ \\___\\_____________\\___\\/`; 
+ 
+
+
+        console.log(myArt); 
+        document.write('<pre>' + myArt + '</pre>'); 
+        //document.write(myArt);
+
+
+        // the line height is too big and the spaces are a bit weird   
+        for(let i = 0; i < myArt.length; i++)    {
+            if(myArt[i] == ' ') {
+                asciiArt += '&numsp;&hairsp;';
+            }   else if (myArt[i] == '\n' || myArt[i] == '\r')  {
+                asciiArt += '<br>';
+            } else {
+                asciiArt += myArt[i] + '&hairsp;';
+            }
+        }
+
+        document.write(asciiArt);
+
+
+
+
+
+
+
+        </script> 
+    </h3>
+
+</body>
+</html>
