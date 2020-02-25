@@ -79,3 +79,23 @@ let names = [“Josie”, “Cathrin”, “Bob”, “Max”, “Hannah”, “
 
 ## Exercise 9
 Write a program that prints the name with more characters in an array of names.
+
+
+## Exercise 10
+Write a program that asks the user for a name and outputs that name backwards.
+
+
+## Exercise 11
+Write a program that asks the user for a sentence and outputs the words in the ___console___, one per line, in a rectangular frame. For example the sentence "Hello World in a frame" gets printed as:
+
+```
+*********
+* Hello *
+* World *
+* in    *
+* a     *
+* frame *
+*********
+```
+> **Hint:**
+> Research how to `split()` Strings.
