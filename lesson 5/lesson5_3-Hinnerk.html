@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework</title>
+</head>
+<body>
+    <h3>
+
+        <script>
+          
+         function checkPrime(a) {
+        
+            for (let i = 2; i < a; i++) {
+                if (a % i == 0) {
+                    return false;
+                    break;
+                }
+            }
+            return true;
+         }
+
+        
+        let toPr ='1 • 2 • ';
+        let count = 3;
+        let num = 3;
+
+        let howMany = prompt('How many prime numbers do you would like to see?', 'enter any number here');
+        howMany = parseInt(howMany) 
+
+
+        while(count <= howMany) {
+            if(checkPrime(num)) {
+                if(count % 20 == 0) {
+                    toPr += num + '<br>';   
+                } else {
+                    if(count == howMany ) {
+                        toPr += num;
+                    } else {
+                        toPr += num + ' • ';
+                    }
+                }           
+                count ++ ;
+            }
+            num ++;
+        }
+
+        document.write('Here are the first ' + howMany +' prime numbers: <br>' + toPr);
+
+        </script> 
+    </h3>
+
+</body>
+</html>
