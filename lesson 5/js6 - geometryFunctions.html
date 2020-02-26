@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function circumference(radius) {
+            return 2 * Math.PI * radius;
+        }
+
+        function circleArea(radius) {
+            return Math.PI * Math.pow(radius, 2);
+        }
+
+        function rectPerimeter(sideA, sideB) {
+            return 2 * (sideA + sideB);
+        }
+
+        function rectArea(sideA, sideB) {
+            return sideA * sideB;
+        }
+
+        function squarePerimeter(side) {
+            return rectPerimeter(side, side);
+        }
+
+        function squareArea(side) {
+            return rectArea(side, side);
+        }
+        
+    </script>
+</body>
+</html>

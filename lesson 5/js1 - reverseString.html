@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let name = "Helder"; // prompt later
+
+        let reversedName = "";
+
+        // for (let i = name.length - 1; i >= 0; i--) {
+        //     reversedName += name[i];
+        // }
+
+        for (let i = 0; i < name.length; i++) {
+            let mirrorPos = name.length - 1 - i;
+            reversedName += name[mirrorPos];
+        }
+
+        document.write(reversedName);
+
+
+
+
+        // HINT for exercise 11:
+        let phrase = "Hello how are you?";
+
+        phrase.split(); //  just a hint, read about it in w3schools documentation
+
+    </script>
+
+</body>
+</html>
