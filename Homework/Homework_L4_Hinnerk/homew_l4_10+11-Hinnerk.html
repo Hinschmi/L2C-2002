@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework</title>
+</head>
+<body>
+    <h3>
+
+        <script>
+      
+        //## Exercise 10
+        //Write a program that asks the user for a name and outputs that name backwards.
+
+
+        let userName = prompt('Please enter your name', 'name');
+        // this is the most stupid var name ever
+        let emanResu = '';
+
+        for(i = userName.length - 1 ; i >= 0; i --) {
+            emanResu += userName[i];
+        }
+
+        document.write('Your name backward: ' + emanResu + '<br>');
+
+        // ## Exercise 11
+        // Write a program that asks the user for a sentence and outputs the words in the ___console___, one per line, in a rectangular frame. For example the sentence "Hello World in a frame" gets printed as:
+
+
+        // *********
+        // * Hello *
+        // * World *
+        // * in    *
+        // * a     *
+        // * frame *
+        // *********
+
+        
+        // > Research how to `split()` Strings.
+
+        innerSize = 0;
+        let frameSign = '#'
+
+        let theText = prompt('Please enter a phrase');
+
+        if(!theText) {
+            theText = 'Hello, This could be your text!';
+        }
+
+        theWords = theText.split(' ');
+        
+        for(i = 0; i < theWords.length; i++) {
+            if( innerSize < theWords[i].length) {
+                innerSize = theWords[i].length;
+            }
+        }
+        
+        let textBlock = frameSign.repeat(innerSize+4) + '\n';
+        let space = ' ';
+
+        for(i = 0; i < theWords.length; i++)   {
+            let x = innerSize - theWords[i].length +1;
+            textBlock += frameSign + space + theWords[i] + space.repeat(x) + frameSign + '\n';
+        }    
+        textBlock += frameSign.repeat(innerSize+4) + '\n'
+        
+         console.log(textBlock);
+       
+
+
+
+
+
+
+
+
+        </script> 
+    </h3>
+
+</body>
+</html>
