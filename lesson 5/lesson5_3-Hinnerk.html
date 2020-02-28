@@ -11,7 +11,9 @@
         <script>
           
          function checkPrime(a) {
-        
+            if( a <= 1 ) {
+                return false;
+            }
             for (let i = 2; i < a; i++) {
                 if (a % i == 0) {
                     return false;
@@ -22,9 +24,9 @@
          }
 
         
-        let toPr ='1 • 2 • ';
-        let count = 3;
-        let num = 3;
+        let toPr ='';
+        let count = 0;
+        let num = 0;
 
         let howMany = prompt('How many prime numbers do you would like to see?', 'enter any number here');
         howMany = parseInt(howMany) 
@@ -32,7 +34,8 @@
 
         while(count <= howMany) {
             if(checkPrime(num)) {
-                if(count % 20 == 0) {
+            
+                if(count % 20 == 0 && count > 19) {
                     toPr += num + '<br>';   
                 } else {
                     if(count == howMany ) {
