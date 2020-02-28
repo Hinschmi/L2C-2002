@@ -7,7 +7,12 @@
 </head>
 <body>
     <script>
+        // Homework: find out the 1st 100 prime numbers
         function checkPrime(number) {
+            if (number < 2) {
+                return false;
+            }
+
             for (let i = 2; i < number; i++) {
                 if (number % i == 0) {
                     return false;
@@ -16,17 +21,14 @@
             return true;
         }
 
-        // let n = 7;
-        // if (checkPrime(n)) {
-        //     document.write(n + " is a prime!");
-        // } else {
-        //     document.write(n + " is not a prime!");
-        // }
-
-        for (let i = 1; i <= 100; i++) {
-            if (checkPrime(i)) {
-                document.write(i + "<br>");
+        let counter = 0;
+        let n = 1;
+        while (counter < 10000) { 
+            if (checkPrime(n)) {
+                counter++;
+                document.write(counter + ": " + n + "<br>");
             }
+            n++;
         }
     </script>
 </body>
