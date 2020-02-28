@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let min = 3; // prompt user;
+        // let max = 10; // prompt user;
+
+
+        // let x = Math.random();
+
+        // x = x * (max + 1 - min);
+
+        // x = Math.floor(x);
+
+        // x = x + min;
+
+        // document.write(x);
+
+
+        function randomizeIt(min, max) {
+            if (max < min) {
+                return NaN;
+            }
+            return  Math.floor(Math.random() * (max + 1 - min)) + min;
+        }
+
+        // Create an array with 5 numbers between 1 and 50 [1..50]
+        
+        let numbers = [];
+        
+        for (let i = 0; i < 1000; i++) {
+
+            numbers[i] = randomizeIt(1, 50);
+
+        }
+        
+        document.write(numbers);
+
+    </script>
+</body>
+</html>

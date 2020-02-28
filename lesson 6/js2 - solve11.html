@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Create the sentece to Frame
+        let sentence = "Hello World in a frame"; // prompt later
+
+        // Split the sentence into an array
+        let newArray = sentence.split(" ");
+
+        // Find the length of the longest word(s)
+        let maxLength = 0;
+        for (let i = 0; i < newArray.length; i++) {
+            if (newArray[i].length > maxLength) {
+                maxLength = newArray[i].length;
+            }
+        }
+
+
+        // start printing...
+        // print first line:
+        document.write("<pre>" + "*".repeat(maxLength + 4) + "<br>");
+        
+        for (let i = 0; i < newArray.length; i++) {
+            document.write("* " + newArray[i] + " ".repeat(maxLength - newArray[i].length) + " *<br>");
+        }
+
+        document.write("*".repeat(maxLength + 4) + "<br></pre>");
+
+
+        // try and make the whole frame into just 1 string. so that you only do document.write once
+    </script>
+    
+</body>
+</html>

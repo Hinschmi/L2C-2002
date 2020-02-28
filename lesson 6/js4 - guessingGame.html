@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function randomizeIt(min, max) {
+            if (max < min) {
+                return NaN;
+            }
+            return  Math.floor(Math.random() * (max + 1 - min)) + min;
+        }
+
+        // Create a game where the computer "thinks"
+        // of a random number between 1 and 100
+        // Ask the user to guess that number...
+        // Tell the user if the number is to High or to Low
+        // until he guesses it!
+
+        // Cheat to Win!
+
+        // let randomNumber = randomizeIt(1, 100);
+        // let userNumber = parseInt(prompt("Guess"));
+
+        // while (randomNumber != userNumber) {
+        //     if (userNumber > randomNumber) {
+        //         userNumber = parseInt(prompt("Too Big! Guess again"));
+        //     } else {
+        //         userNumber = parseInt(prompt("Too Small! Guess again"));
+        //     }
+        // }
+        
+        // document.write("You did it!!!!!");
+
+
+        let randomNumber = 50//randomizeIt(1, 100);
+        let userNumber = parseInt(prompt("Guess"));
+
+        let hasWon = false;
+
+        for (let i = 5; i > 0; i--) {
+            if (userNumber > randomNumber) {
+                userNumber = parseInt(prompt("Too Big! Guess again " + i + " tries left"));
+            } else if (userNumber < randomNumber){
+                userNumber = parseInt(prompt("Too Small! Guess again " + i + " tries left"));
+            }
+            if (userNumber == randomNumber) {
+                hasWon = true;
+                break;
+            }
+        }
+
+        if (hasWon) {
+            document.write("Dude you're awesome!");
+        } else {
+            document.write("You suck so bad...");
+        }
+
+        
+    </script>
+</body>
+</html>
