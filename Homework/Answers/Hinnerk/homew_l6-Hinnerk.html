@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework</title>
+</head>
+<body>
+    <h3>
+
+        <script>
+          
+         function randomizeIt(min , max) {
+            if(max < min) {
+                return NaN;
+            }
+            return Math.floor(Math.random() * (max +1 - min)) + min;
+
+         }
+
+        let min = 1;
+        let max = 100;
+        let res = randomizeIt(min, max);
+        let userNum = prompt('You have 6 tries, to gues a number in between 1 and 100'); 
+        userNum = parseInt(userNum);
+
+        // this is just for smart cheating - no for testing
+        console.log('Here is the winning number: ', res);
+
+        // set how many tries are allowed 
+        let a = 6;    
+
+        for(i = 1; i < a +1; i++) {
+            console.log(i); 
+            if(i == a && userNum != res ) {
+                document.write('Sorry, too bad - how could you loose such a simple game????');
+                break 
+            }
+            if(userNum < res) {
+                userNum = prompt('too low, you have '+ (a - i ) + ' tries left, go for it:');
+                userNum = parseInt(userNum);
+            }
+            if(userNum > res) {
+                userNum = prompt('too high, you have '+ (a -i) + ' tries left, next number:');
+                userNum = parseInt(userNum);    
+            }  
+            if(userNum == res) {
+                document.write('Yeah you did it in ' + i  + ' steps');
+                break;    
+            } 
+           
+        }
+
+        
+        </script> 
+    </h3>
+
+</body>
+</html>
