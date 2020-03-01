@@ -103,7 +103,7 @@ Write a program that asks the user for a sentence and outputs the words in the _
 
 ## Exercise 12
 ### Triangles
-Write a programa that asks the user for a number `n` and then outputs a triangle with the height and width of `n`
+Write a programa that asks the user for a size `s` and then outputs a triangle with the height and width of `s`
 
 > **Example:**
 > User inputs `4`
@@ -116,6 +116,17 @@ Write a programa that asks the user for a number `n` and then outputs a triangle
 ```
 > **Bonus goal:**
 > Also ask the user for how many triangles to print.
+> User inputs size `3`
+> User inputs times`2`
+> Output:
+```
+*
+**
+***
+*
+**
+***
+```
 
 
 ## Exercise 13
