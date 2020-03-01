@@ -8,13 +8,13 @@ Please enter your name:
 Hello <NAME>, welcome to the Learn to Code course.
 ```
 
-> **Hint:**
+> **Hint:**<br />
 > Use `prompt()` for the input and `document.write()` for the output .
 
 
 ## Exercise 2
 ### Format text
-Choose a simple Ascii art from the website https://www.asciiart.eu/.
+Choose a simple Ascii art from the website https://www.asciiart.eu/.<br />
 Output it to the ___console___.
 ```
 ￼        _______
@@ -25,16 +25,16 @@ Output it to the ___console___.
 ___\_/________\_/______
 ```
 
-> **Bonus goal:**
+> **Bonus goal:**<br />
 > Can you do the same using `document.write()` to output to HTML instead?
 
 
 ## Exercise 3
 ### Currency converter
-Write a program that asks the user for an amount in USD.
+Write a program that asks the user for an amount in USD.<br />
 Output that amount converted to EURO.
 
-> **Bonus goal:**
+> **Bonus goal:**<br />
 > Use a precision of 2 decimal points: `3.45€`.
 
 
@@ -42,18 +42,18 @@ Output that amount converted to EURO.
 ### Sum loop
 Write a program that asks the user for a number `n` and prints the sum of the numbers `1` to `n`.
 
-> **Example:**
-> User inputs `5`
-> Output:
+> **Example:**<br />
+> User inputs `5`<br />
+> Output:<br />
 > `1 + 2 + 3 + 4 + 5 = 15`
 
 
 ## Exercise 5
 Modify the Exercise 4 so that only multiples of three or five are considered in the sum.
 
-> **Example:**
-> User inputs `17`
-> Output:
+> **Example:**<br />
+> User inputs `17`<br />
+> Output:<br />
 > `3 + 5 + 6 + 9 + 10 + 12 + 15 = 60`
 
 
@@ -97,7 +97,7 @@ Write a program that asks the user for a sentence and outputs the words in the _
 * frame *
 *********
 ```
-> **Hint:**
+> **Hint:**<br />
 > Research how to `split()` Strings.
 
 
@@ -105,8 +105,8 @@ Write a program that asks the user for a sentence and outputs the words in the _
 ### Triangles
 Write a programa that asks the user for a size `s` and then outputs a triangle with the height and width of `s`
 
-> **Example:**
-> User inputs `4`
+> **Example:**<br />
+> User inputs `4`<br />
 > Output:
 ```
 *
@@ -114,10 +114,10 @@ Write a programa that asks the user for a size `s` and then outputs a triangle w
 ***
 ****
 ```
-> **Bonus goal:**
-> Also ask the user for how many triangles to print.
-> User inputs size `3`
-> User inputs times`2`
+> **Bonus goal:**<br />
+> Also ask the user for how many triangles to print.<br />
+> User inputs size `3`<br />
+> User inputs times`2`<br />
 > Output:
 ```
 *
@@ -133,8 +133,8 @@ Write a programa that asks the user for a size `s` and then outputs a triangle w
 ### Xmas tree 🎄
 
 Write a programa that asks the user for a height `h` and then output a Xmas Tree with an height of `h`.
-> **Example:**
-> User inputs `5`
+> **Example:**<br />
+> User inputs `5`<br />
 > Output:
 ```
     *
@@ -144,13 +144,13 @@ Write a programa that asks the user for a height `h` and then output a Xmas Tree
 *********
     I
 ```
-> **Hint:**
+> **Hint:**<br />
 > Don't forget the stem.
 
 
 ## Exercise 14
 
-List a table that multiplies all the numbers from 1 to 10.
+List a table that multiplies all the numbers from 1 to 10.<br />
 Format your output to something like this:
 ```
  1   2   3   4   5   6   7   8   9  10
@@ -169,5 +169,5 @@ Format your output to something like this:
 ### Guessing Game
 
 Write a guessing game where the user has to guess a secret number between 1 and 100 generated randomly by the program.
-After every guess the program tells the user whether their number was too large or too small.
+After every guess the program tells the user whether their number was too large or too small.<br />
 After 6 tries the game is over and the user loses.
