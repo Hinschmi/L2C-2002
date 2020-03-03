@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework</title>
+</head>
+<body>
+    <h3>
+
+        <script>
+        // ## Exercise 13
+        // ### Xmas tree 🎄
+
+        // Write a programa that asks the user for a height `h` and then output a Xmas Tree with an height of `h`.    
+            
+
+         
+        // needed variables    
+        let inputOK = false; 
+        let sign = '*';
+        let space = '&#8199';
+        
+
+        // functions    
+
+        function drawTree(high) {
+            let tree = '';
+            let treeWidth = high * 2 -1;
+            
+            for(i=1; i <= high; i++) {
+                let treeGreen = i *2 -1;
+                    tree += space.repeat((treeWidth - treeGreen) / 2) + sign.repeat(treeGreen) + space.repeat((treeWidth - treeGreen)/ 2) + '<br>';
+                } 
+                
+            tree += space.repeat((treeWidth - 1) / 2) + 'I' + space.repeat((treeWidth - 1) / 2 )+ '<br><br>';    
+            return tree
+        }   
+
+
+        // asking for size and how many    
+        let userInput = parseInt(prompt('Please enter  a number bigger than 1 and you will winn a tree'));
+
+        while(inputOK == false) {
+        
+            if(isNaN(userInput) || userInput<= 1 ) {
+                //console.log('lets see the NaN input: ', userInput);
+                userInput = parseInt(prompt('Please enter a number bigger than 1')); 
+            } else {
+                console.log('lets see the input: ', userInput);
+                inputOK = true;
+                
+            }
+            
+        }
+        
+        let theTree = drawTree(userInput);
+
+        document.write(theTree);
+
+
+        //## Exercise 14
+        //List a table that multiplies all the numbers from 1 to 10.
+
+        let n = 10;
+        let dist = '&numsp;';
+        
+        function multiNum(n) {
+            let numList = '';
+           let bigNum = n * n;
+           let bigLength = (''+ bigNum).length; 
+           console.log('big length: ', bigLength);
+           
+            for(i = 1; i <= n; i++) {
+                for(a = 1; a <=n; a++) {
+                    myNum = i * a;
+                    myLength = (''+ myNum).length;
+                    
+                    numList += dist.repeat(bigLength - myLength) + myNum + dist.repeat(2);
+                    ; 
+                }
+                numList += '<br>';
+            }
+            return numList
+        }
+        let myRes = multiNum(n);
+        document.write(myRes);    
+        
+        </script> 
+    </h3>
+
+</body>
+</html>

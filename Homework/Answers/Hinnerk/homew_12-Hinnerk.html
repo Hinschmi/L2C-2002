@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework</title>
+</head>
+<body>
+    <h3>
+
+        <script>
+        // ## Exercise 12
+        // ### Triangles
+        // Write a programa that asks the user for a size `s` and then outputs a triangle with the height and width of `s`
+
+        // > **Example:**<br />
+        // > User inputs `4`<br />
+        // > Output:
+
+        // *
+        // **
+        // ***
+        // ****
+
+        // > **Bonus goal:**<br />
+        // > Also ask the user for how many triangles to print.<br />
+        // > User inputs size `3`<br />
+        // > User inputs times`2`<br />
+        // > Output:
+
+        // *
+        // **
+        // ***
+        // *
+        // **
+        // ***
+
+         
+        // needed variables    
+        let inputOK = false; 
+        let numbers = [];
+        let sign = '*';
+        
+
+        // functions    
+
+        function drawTriangle(size) {
+            let tria = '';
+            for(i=0; i < size; i++) {
+                tria += sign.repeat(i) + '<br>';
+            }
+            return tria
+        }   
+
+
+        // asking for size and how many    
+        let userInput = prompt('Please enter the triangle size, and how many triangle you want to see \n enter two numbers comma seperatet');
+        while(inputOK == false) {
+            numbers = [];
+            numbers = userInput.split(',');
+            console.log('lets see the input: ', numbers);
+            if(numbers.length == 2 && parseInt(numbers[0]) && parseInt(numbers[1])) {
+               numbers[0] =parseInt(numbers[0]); 
+               numbers[1] =parseInt(numbers[1]);
+               inputOK = true;
+            } else {
+                userInput = prompt('Please enter two numbers comma seperatet'); 
+            }
+            
+        }
+        
+        let theTriangle = drawTriangle(numbers[0]);
+
+        document.write(theTriangle.repeat(numbers[1]));
+        
+        
+           
+        
+
+        
+        </script> 
+    </h3>
+
+</body>
+</html>
