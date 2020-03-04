@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#13</title>
+</head>
+
+<body>
+
+  <script>
+
+    // Xmas tree 🎄
+    // Write a programa that asks the user for a height h and then output a Xmas Tree with an height of h.
+
+    // Example:
+    // User inputs 5
+    // Output:
+
+    //     *
+    //    ***
+    //   *****
+    //  *******
+    // *********
+    //     I
+    // Hint:
+    // Don't forget the stem.
+
+    let height =  parseInt(prompt("how big do you like your Xmas tree?"));
+
+    for (let i = 1; i <= height; i++) {
+      let line = "";
+      line += " ".repeat(height - (i * 2 - 1) / 2);
+      line += "*".repeat(i * 2 - 1);
+      line += " ".repeat(height - (i * 2 - 1) / 2);
+      console.log(line);
+    }
+    console.log(" ".repeat((height * 2 - 1) / 2) + "I");
+
+
+    for (let i = 1; i <= height; i++) {
+      let line = "";
+      line += "&nbsp;".repeat(height - (i * 2 - 1) / 2);
+      line += "*".repeat(i * 2 - 1);
+      line += "&nbsp;".repeat(height - (i * 2 - 1) / 2);
+    }
+    document.write("&nbsp;".repeat((height * 2 - 1) / 2) + "I");
+
+  </script>
+
+</body>
+
+</html>

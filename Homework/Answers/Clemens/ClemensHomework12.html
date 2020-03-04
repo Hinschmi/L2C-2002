@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#12</title>
+</head>
+
+<body>
+
+  <script>
+
+    // Write a programa that asks the user for a size s and then outputs a triangle with the height and width of s
+
+    // Example:
+    // User inputs 4
+    // Output:
+
+    // *
+    // **
+    // ***
+    // ****
+
+    let s = parseInt(prompt("how big would you like your Xmas tree?"));
+    let t = parseInt(prompt("how many would you like?"));
+
+    for (let i = 0; i < t; i++) {
+      for (let i = 1; i <= s; i++) {
+        console.log("*".repeat(i));
+      }
+    }
+
+  </script>
+
+</body>
+
+</html>
