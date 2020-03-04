@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function itExists(needle, haystack) {
+            for (let i = 0; i < haystack.length; i++) {                
+                if (needle == haystack[i]) {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+
+
+
+        let someNumber = 5;
+        let someArray = [4, 10, 6, 3, 1, 12];
+
+        if (itExists(someNumber, someArray)) {
+            document.write("FOUND IT! 😁😁😁");
+        } else {
+            document.write("😿");
+        }
+
+    </script>
+</body>
+</html>

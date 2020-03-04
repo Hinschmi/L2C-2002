@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function dashItUp(word, separator) {
+            if (separator == undefined) {
+                separator = "-";
+            }
+
+            let dashedWord = "";
+
+            for (let i = 0; i < word.length; i++) {
+
+                if (i > 0) {
+                    dashedWord += separator;
+                }
+                dashedWord += word[i];
+
+            }
+
+            return dashedWord;
+        }
+
+
+        let userWord = "banana"; // prompt later
+
+        let fancy = dashItUp(userWord, "🍌");
+        document.write(fancy);
+        
+
+
+
+        
+
+
+    </script>
+</body>
+</html>

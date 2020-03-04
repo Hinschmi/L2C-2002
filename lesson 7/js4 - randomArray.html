@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function randomizeIt(min, max) {
+            if (max < min) {
+                return NaN;
+            }
+            return  Math.floor(Math.random() * (max + 1 - min)) + min;
+        }
+
+        function itExists(needle, haystack) {
+            for (let i = 0; i < haystack.length; i++) {                
+                if (needle == haystack[i]) {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+// 1. CREATE AN ARRAY WITH 5 RANDOM NUMBERS BETWEEN 1 AND 50
+
+// 2. CREATE AN ARRAY WITH 5 UNIQUE RANDOM NUMBERS BETWEEN 1 AND 50
+
+    </script>
+</body>
+</html>
