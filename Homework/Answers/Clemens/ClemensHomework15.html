@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#15</title>
+</head>
+
+<body>
+
+  <script>
+    function getRndInteger(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    let random = getRndInteger(1, 100);
+
+    let guess = parseInt(prompt("Guess a number between 1 and 100"));
+
+
+    for (let i = 6; i > 0; i--) {
+      if (guess == random) {
+        break;
+      } else if (guess < random) {
+        guess = parseInt(prompt("Nope, my number is bigger! You have " + i + " trials left."));
+      } else {
+        guess = parseInt(prompt("Nope, my number is smaller! You have " + i + " trials left."));
+      }
+    }
+
+    if (guess == random) {
+      document.write("Bingo!");
+    } else {
+      document.write("Sorry dude, you're out of chances.")
+    }
+
+  </script>
+</body>
+
+</html>

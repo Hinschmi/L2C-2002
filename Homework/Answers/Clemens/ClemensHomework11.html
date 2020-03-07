@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#11</title>
+</head>
+
+<body>
+
+
+  <script>
+    //     Write a program that asks the user for a sentence and outputs the words in the console, one per line, in a rectangular frame. For example the sentence "Hello World in a frame" gets printed as:
+
+    // *********
+    // * Hello *
+    // * World *
+    // * in    *
+    // * a     *
+    // * frame *
+    // *********
+    // Hint: Research how to split() Strings.
+
+
+    let sentence = "Hello World in a frame";
+
+
+    let splitSentence = sentence.split(" ");
+
+    let maxWord = "";
+
+    function longestWord() {
+      for (let i = 0; i < splitSentence.length; i++) {
+        if (maxWord.length < splitSentence[i].length) {
+          maxWord = splitSentence[i];
+        }
+        return maxWord;
+      }
+    }
+
+    maxWordLength = longestWord(sentence).length;
+    console.log(maxWordLength);
+    let asterisk = "*";
+    let empty = "    ";
+
+
+    console.log(asterisk.repeat(maxWordLength + 4));
+
+    for (let i = 0; i < splitSentence.length; i++) {
+      let line = "";
+      line += "* " + splitSentence[i] + " ".repeat(maxWordLength - splitSentence[i].length) + " *";
+      console.log(line);
+    }
+    console.log(asterisk.repeat(maxWordLength + 4));
+
+  </script>
+
+</body>
+
+</html>

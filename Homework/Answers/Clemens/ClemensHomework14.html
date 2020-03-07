@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#14</title>
+</head>
+
+<body>
+
+  <script>
+
+    // List a table that multiplies all the numbers from 1 to 10.
+    // Format your output to something like this:
+
+    for (let i = 1; i <= 10; i++) {
+      let line = "";
+      for (let a = 1; a <= 10; a++) {
+        if (a * i < 10) {
+          line += "   " + a * i;
+        } else if (a * i < 100) {
+          line += "  " + a * i;
+        } else {
+          line += " " + a * i;
+        }
+      }
+      console.log(line + "\n");
+    }
+
+  </script>
+
+</body>
+
+</html>
