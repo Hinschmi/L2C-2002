@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<pre>
+    *
+   ***
+  *****
+ *******
+*********
+    I
+</pre>
+    <script>
+
+        function drawTree(height) {
+            let tree = "";
+            for (let i = 0; i < height; i++) {
+                let spaceCount = height - 1 - i;
+                let asteriskCount = i * 2 + 1;
+
+                tree += " ".repeat(spaceCount);
+                tree += "*".repeat(asteriskCount);
+                tree += "\n";
+            }
+            tree += " ".repeat(height - 1) + "I\n";
+            
+            return tree;
+        }
+
+
+        let height = 16; // prompt user
+        
+        
+        document.write("<pre>" + drawTree(height) + "</pre>");
+        console.log(drawTree(height));
+
+
+    </script>
+</body>
+</html>

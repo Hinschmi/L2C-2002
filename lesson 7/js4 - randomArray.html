@@ -27,6 +27,44 @@
 
 // 2. CREATE AN ARRAY WITH 5 UNIQUE RANDOM NUMBERS BETWEEN 1 AND 50
 
+
+        // let newArray = [];
+        // for (let i = 0; i < 5; i++) {
+        //     newArray[i] = randomizeIt(1, 50);
+        // }
+        // document.write(newArray);
+
+
+
+        // let newArray = [];
+        // for (let i = 0; i < 5; i++) {
+        //     let temp = randomizeIt(1, 5);
+        //     while (itExists(temp, newArray)) {
+        //         temp = randomizeIt(1, 5);
+        //     } 
+        //     newArray[i] = temp;
+        // }
+        // document.write(newArray);
+
+        
+        
+
+        function createRandom(min, max, size) {
+            let newArray = [];
+
+            while (newArray.length < size) {
+                let temp = randomizeIt(min, max);
+                if (itExists(temp, newArray) == false) {
+                    newArray.push(temp);
+                }
+            }
+            return newArray;
+        }
+
+        let x = createRandom(1, 50, 5);
+        let y = createRandom(1, 10, 2);
+        document.write(x + " - " + y);
+
     </script>
 </body>
 </html>
